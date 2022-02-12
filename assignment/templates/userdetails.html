@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Demo Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="static/css/styles.min.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+    <div>
+        <div class="container" style="padding-top: 10%;">
+            <div class="intro">
+                <h2 class="text-center">Welcome {{result.firstname}} {{result.lastname}} &nbsp;</h2>
+		<p class="text-center">Your Email: {{result.email}}</p>
+                <p class="text-center">Your First Name: {{result.firstname}}</p>
+                <p class="text-center">Your Last Name: {{result.lastname}}</p>
+		<p class="text-center">Your ID: {{result.sid}}</p>
+		<p class="text-center">Your Address: {{result.address}}</p>
+		<p class="text-center">Your Phone: {{result.phn}}</p>
+            </div>
+            <p class="padleft10 remx" >
+	    <a href="{{url_for('registration')}}" class="orange darken-4 btn">Logout</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
